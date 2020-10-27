@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System;
+using Microsoft.Extensions.DependencyInjection;
 using StaticLogger.Logging;
 using StaticLogger.Logging.Providers;
 
@@ -10,18 +11,23 @@ namespace StaticLogger
         {
             var services = InitialiseServices();
 
+            InitialiseLogger(services);
+
+            var service = services.GetService<MainService>();
+            service.DoStuff();
+        }
+
+        private static void InitialiseLogger(IServiceProvider services)
+        {
             // Add all logging providers to the Logger
             var loggingProviders = services.GetServices<ILoggingProvider>();
             foreach (var provider in loggingProviders)
             {
                 Logger.AddProvider(provider);
             }
-
-            var service = services.GetService<MainService>();
-            service.DoStuff();
         }
 
-        private static ServiceProvider InitialiseServices()
+        private static IServiceProvider InitialiseServices()
         {
             var services = new ServiceCollection();
 
