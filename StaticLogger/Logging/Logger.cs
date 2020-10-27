@@ -3,6 +3,13 @@ using StaticLogger.Logging.Providers;
 
 namespace StaticLogger.Logging
 {
+    /// <summary>
+    /// A static logger to be used throughout the project.
+    ///
+    /// Because it's static, it's easy to use and doesn't need to be injected into every class.
+    ///
+    /// If no providers are added it does nothing, so it won't break unit tests.
+    /// </summary>
     public static class Logger
     {
         private static readonly List<ILoggingProvider> LoggingProviders = new List<ILoggingProvider>();

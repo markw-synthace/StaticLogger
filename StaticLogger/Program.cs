@@ -11,6 +11,7 @@ namespace StaticLogger
         {
             var services = InitialiseServices();
 
+            // Call this right up here at top level, before we kick off the root service
             InitialiseLogger(services);
 
             var service = services.GetService<MainService>();
