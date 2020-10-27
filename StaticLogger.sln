@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticLogger", "StaticLogger\StaticLogger.csproj", "{551BEF85-4740-474D-BBF5-F8C6ED4A7702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticLogger.Tests", "StaticLogger.Tests\StaticLogger.Tests.csproj", "{5CA683C5-2B21-4718-BEA4-6AFFA8755D9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{551BEF85-4740-474D-BBF5-F8C6ED4A7702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551BEF85-4740-474D-BBF5-F8C6ED4A7702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551BEF85-4740-474D-BBF5-F8C6ED4A7702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551BEF85-4740-474D-BBF5-F8C6ED4A7702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA683C5-2B21-4718-BEA4-6AFFA8755D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA683C5-2B21-4718-BEA4-6AFFA8755D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA683C5-2B21-4718-BEA4-6AFFA8755D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA683C5-2B21-4718-BEA4-6AFFA8755D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
